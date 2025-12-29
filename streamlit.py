@@ -98,7 +98,7 @@ if st.button("Predict Liver Metastasis Risk"):
         "4. Maintain a high-protein diet to improve anemia."
     )
     advice_low = (
-        "1. Follow up (abdominal ultrasound + serology) every 3 months;\n"  
+        "1. Follow up (abdominal ultrasound + serology) every 3 months;\n"
         "2. Avoid alcohol/spicy foods to reduce gastric irritation;\n"
         "3. Keep regular schedule & moderate exercise;\n"
         "4. Seek medical help for abdominal pain/jaundice/weight loss."
@@ -126,4 +126,5 @@ if st.button("Predict Liver Metastasis Risk"):
     plt.savefig("svm_shap_force_plot.png", bbox_inches="tight", dpi=300)
     st.image("svm_shap_force_plot.png")
     st.caption("Red: Increase metastasis risk; Blue: Reduce metastasis risk; Length: Contribution degree")
+
 
